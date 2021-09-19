@@ -3,6 +3,8 @@ import Cropper from 'react-easy-crop';
 import { RestartProcess } from './RestartProcess';
 import makeCroppedImg from '../helper/cropImage';
 
+import './styles/LogoCropper.css';
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
@@ -75,7 +77,6 @@ export const LogoCropper = ({
         </div>
         <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
       </div>
-      
     </section>
   );
 };
