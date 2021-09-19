@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+  .LogoCropper section {
+    display: flex;
+    min-height: 177px;
+    align-content: center;
+  }
+
+  .LogoCropper section div {
+    min-height: 114px;
+    max-width: 114px;
+    border-radius: 50%;
+  }
+
+  .LogoCropper section div div {
+    min-width: 100%;
+  }
+
+  .cropperContainer {
+    position: relative;
+    min-width: 114px;
+    min-height: 114px;
+    max-width: 114px;
+    max-height: 114px;
+    border: none;
+  }
+
+  #optionsContainer {
+    margin: 39px 100px 28px 63px;
+    min-width: 276px;
+    display: flex;
+  }
+
+  #optionsContainer input {
+    margin-top: 14px;
+    width: 276px;
+  }
+
+  #optionsContainer div label p {
+    color: #677489;
+    margin: 0;
+  }
+
+  #optionsContainer div label input {
+    outline: none;
+  }
+
+  /* the range background color did not change as I expected :( */
+  #optionsContainer div label input::-webkit-slider-runnable-track {
+    height: 2px;
+  }
+
+  #optionsContainer div label input::-webkit-slider-thumb {
+    margin-top: -7px;
+  }
+
+  #saveButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #saveButtonContainer button {
+    margin-top: 35px;
+    background-color: #3D485F;
+    border: none;
+    border-radius: 16px;
+    color: #FFFFFF;
+    max-height: 32px;
+    min-width: 109px;
+    max-width: 109px;
+  }
+}

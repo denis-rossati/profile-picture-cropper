@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  #closeButton {
+    position: absolute;
+    min-width: 26px;
+    max-width: 26px;
+    min-height: 19px;
+    max-height: 19px;
+    top: 35px;
+    left: 600px;
+  }
+
+  #closeButton button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}

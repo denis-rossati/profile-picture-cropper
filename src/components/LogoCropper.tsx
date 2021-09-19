@@ -3,6 +3,8 @@ import Cropper from 'react-easy-crop';
 import { RestartProcess } from './RestartProcess';
 import makeCroppedImg from '../helper/cropImage';
 
+import './styles/LogoCropper.css';
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
@@ -33,8 +35,8 @@ export const LogoCropper = ({
 
   return (
     <section>
-      <div>
-      <Cropper
+      <div className="cropperContainer">
+        <Cropper
           image={logoImg}
           crop={crop}
           zoom={zoom}
@@ -51,8 +53,8 @@ export const LogoCropper = ({
           } }
         />
       </div>
-      <div>
-        <div>
+      <div id="optionsContainer">
+        <div id="innerOptions">
           <label>
             <p>Crop</p>
             <input
@@ -64,7 +66,7 @@ export const LogoCropper = ({
               onChange={handleSliderChange}
             />
           </label>
-          <div>
+          <div id="saveButtonContainer">
             <button
               type="button"
               onClick={completingEdition}
@@ -73,9 +75,8 @@ export const LogoCropper = ({
             </button>
           </div>
         </div>
-        <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
       </div>
-      
+      <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
     </section>
   );
 };

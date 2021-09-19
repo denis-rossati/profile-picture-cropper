@@ -18,7 +18,7 @@ export const ErrorComponent = ({
 
   const takeToTheInitialComponent = () => {
     setLogoImg('');
-    setComponent('InputReceiving');
+    setComponent('LogoInput');
   }
 
   return (

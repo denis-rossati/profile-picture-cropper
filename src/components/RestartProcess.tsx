@@ -1,6 +1,8 @@
 import React from 'react';
 import closeIcon from '../icons/closeX.png';
 
+import './styles/RestartProcess.css';
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
