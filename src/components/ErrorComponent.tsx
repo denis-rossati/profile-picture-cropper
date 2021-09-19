@@ -2,6 +2,8 @@ import React from 'react';
 import { RestartProcess } from './RestartProcess';
 import atentionIcon from '../icons/atentionIcon.png';
 
+import './styles/ErrorComponent.css';
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
