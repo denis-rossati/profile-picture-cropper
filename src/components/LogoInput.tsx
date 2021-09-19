@@ -1,11 +1,15 @@
 import React from 'react';
 
-type Props = {
+interface Props {
   logoImg: null | string,
+  setComponent: React.Dispatch<React.SetStateAction<string>>,
+  setLogoImg: React.Dispatch<React.SetStateAction<string | null>>,
 }
 
 export const LogoInput = ({
   logoImg,
+  setComponent,
+  setLogoImg,
 }: Props): JSX.Element => {
 
   const handleOnDropUpload = async (event: React.DragEvent) => {
@@ -15,7 +19,17 @@ export const LogoInput = ({
   }
 
   const manageAvatarState = async (file: File) => {
-
+    if (file && file.type.match('image.*')) {
+      const reader = new FileReader();
+      await reader.readAsDataURL(file);
+      reader.onloadend = () => {
+        setLogoImg(reader.result as string);
+        setComponent('LogoCropper');
+      } 
+    } else {
+      setLogoImg(null);
+      setComponent('InvalidFile');
+    }
   }
 
   return (
