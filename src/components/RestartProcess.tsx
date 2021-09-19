@@ -8,19 +8,19 @@ interface Props {
   setComponent: SetStateDefaultStringType,
 }
 
-export const RestartProecss = ({
+export const RestartProcess = ({
   setLogoImg,
   setComponent,
 }: Props) => {
   
   const resetProcess = () => {
     setLogoImg('');
-    setCompoenent('LogoInput');
+    setComponent('LogoInput');
   }
 
   return(
     <div>
-      <button>
+      <button onClick={resetProcess}>
         <img src={closeIcon} alt="close icon" />
       </button>
     </div>
