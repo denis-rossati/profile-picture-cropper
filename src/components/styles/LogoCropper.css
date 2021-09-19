@@ -1,8 +1,19 @@
 @media (max-width: 768px) {
+
   .LogoCropper section {
     display: flex;
     min-height: 177px;
     align-content: center;
+  }
+
+  .LogoCropper section div {
+    min-height: 114px;
+    max-width: 114px;
+    border-radius: 50%;
+  }
+
+  .LogoCropper section div div {
+    min-width: 100%;
   }
 
   .cropperContainer {
@@ -13,4 +24,7 @@
     max-height: 114px;
     border: none;
   }
+
+  
+
 }
