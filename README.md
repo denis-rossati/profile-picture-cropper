@@ -8,6 +8,7 @@ This is an app where the user can insert a picture and crop as he please. After 
 
 <details>
   <Summary>App display</Summary>
+</details>
 
 ## Target
 
