@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { RestartProcess } from './RestartProcess';
 import atentionIcon from '../icons/atentionIcon.png';
 
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
@@ -20,7 +20,6 @@ export const ErrorComponent = ({
   }
 
   return (
-    <div>
       <article>
         <div>
           <img src={atentionIcon}  alt="atention icon" />
@@ -33,7 +32,7 @@ export const ErrorComponent = ({
             Try again
           </button>
         </div>
+        <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
       </article>
-    </div>
   );
 };
