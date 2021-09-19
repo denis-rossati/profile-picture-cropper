@@ -1,10 +1,11 @@
 import React, { useState, useCallback} from 'react';
 import Cropper from 'react-easy-crop';
+import makeCroppedImg from '../helper/cropImage';
 
 interface Props {
   logoImg: (string | undefined),
   setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
-  setComponent: React.Dispatch<React.SetStateAction<string>>,
+  setComponent: React.Dispatch<React.SetStateAction<string | undefined>>,
 }
 
 export const LogoCropper = ({
@@ -14,7 +15,7 @@ export const LogoCropper = ({
 }: Props): JSX.Element => {
   const [crop, setCrop] = useState({ x: 0, y: 0});
   const [zoom, setZoom] = useState(1);
-  const [croppedAreaPixels, setCroppedAreaPixels] = useState({x: 0, y: 0});
+  const [croppedAreaPixels, setCroppedAreaPixels] = useState({width: 0, height: 0, x: 0, y: 0});
 
   const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
     setCroppedAreaPixels(croppedAreaPixels)

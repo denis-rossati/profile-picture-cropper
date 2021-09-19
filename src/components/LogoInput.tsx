@@ -2,7 +2,7 @@ import React from 'react';
 
 interface Props {
   logoImg: (undefined | string),
-  setComponentName: React.Dispatch<React.SetStateAction<string>>,
+  setComponentName: React.Dispatch<React.SetStateAction<string | undefined>>,
   setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
 }
 
