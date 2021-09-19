@@ -68,14 +68,4 @@
     min-width: 109px;
     max-width: 109px;
   }
-
-  #closeButton {
-    max-width: fit-content;
-  }
-
-  #closeButton button {
-    outline: none;
-    background-color: transparent;
-    border: none;
-  }
 }

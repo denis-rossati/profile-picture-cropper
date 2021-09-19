@@ -75,8 +75,8 @@ export const LogoCropper = ({
             </button>
           </div>
         </div>
-        <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
       </div>
+      <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
     </section>
   );
 };
