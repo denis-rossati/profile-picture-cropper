@@ -3,8 +3,8 @@ import { LogoInput } from '../components/LogoInput';
 import {LogoCropper} from '../components/LogoCropper';
 
 const AvatarUploader = (): JSX.Element => {
-  const [componentName, setComponentName] = useState('LogoInput');
-  const [logoImg, setLogoImg] = useState<null | string>(null);
+  const [componentName, setComponentName] = useState<string | undefined>('LogoInput');
+  const [logoImg, setLogoImg] = useState<string | undefined>('');
 
   const renderComponent = (): JSX.Element => {
     switch(true) {
@@ -16,7 +16,11 @@ const AvatarUploader = (): JSX.Element => {
         />
       );
       case componentName === 'LogoCropper': return (
-        <p>teste</p>
+        <LogoCropper
+          logoImg={logoImg}
+          setLogoImg={setLogoImg}
+          setComponent={setComponentName}
+        />
       );
       default: return (
         <LogoInput
