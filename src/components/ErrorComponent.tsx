@@ -1,6 +1,22 @@
 import React from 'react';
 
-export const ErrorComponent = () => {
+type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
+
+interface Props {
+  setLogoImg: SetStateDefaultStringType,
+  setComponent: SetStateDefaultStringType,
+}
+
+export const ErrorComponent = ({
+  setLogoImg,
+  setComponent,
+}: Props): JSX.Element => {
+
+  const takeToTheInitialComponent = () => {
+    setLogoImg('');
+    setComponent('InputReceiving');
+  }
+
   return (
     <div>
       <article>
@@ -9,7 +25,11 @@ export const ErrorComponent = () => {
         </div>
         <div>
           <p>Sorry, the upload failed.</p>
-          <button onClick={}>Try again</button>
+          <button
+            onClick={takeToTheInitialComponent}
+          >
+            Try again
+          </button>
         </div>
       </article>
     </div>
