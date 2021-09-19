@@ -22,8 +22,7 @@ export const LogoCropper = ({
 
   const handleSliderChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => setZoom(parseFloat(value));
 
-  const completingEdition = async (event) => {
-    event.preventDefault();
+  const completingEdition = async () => {
     await makeCroppedImg(logoImg, croppedAreaPixels, setLogoImg, setComponent);
     setComponent('LogoInput');
   }
@@ -63,7 +62,7 @@ export const LogoCropper = ({
           </label>
           <div>
             <button
-              type="submit"
+              type="button"
               onClick={completingEdition}
             >
               Save
