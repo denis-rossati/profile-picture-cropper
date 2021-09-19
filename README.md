@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Logo Cropper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an app where the user can insert a picture and crop as he please. After this, it is generated a URL of the cropped image to do whatever he want.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Using the app
 
-### `yarn start`
+<details>
+  <Summary>App display</Summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Target
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is, actually, a test required by the croct team. Here I show some of my front-end web skills >:)
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How can I use it?
 
-### `yarn build`
+I did not deploy the app. But I'm planning to do in a close future. By now, you can can run `npm start` after cloning the repo whenever you want and running `npm i`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I have used mainly react + typescript for the entire project. I used the ESLint to help me organize the modules and prevent some small bugs (never forget to use lint, folks).
 
-### `yarn eject`
+I also used [react-easy-crop](https://github.com/ricardo-ch/react-easy-crop) to help me to deal with the canvas element. I don't have that much experience with canvas, once a tried to do a clone of [this website](https://jacksonpollock.org/). But only that.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As I discussed with Juliana, from the croct team, for the sake of not taking 1 week to make the project, I saved the application from being properly tested
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This aplication does not have a back end, but if it had, I probably would use multer and express to store the cropped image.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+One of the requirements was "Clicking on save, the component should display the cropped logo and a button to restart the process. It must also provide some way for parent components to access the resulting image's raw data.". This put me in a doubt, for one second, I thought that I was required to use a tool to make the URL avaliable to the whole aplication. In other words, a global state. I did not implement this because I don't think that this was the purpose of the requirement. But due to the size of the application. I would choose context API instead of redux because it's more simple.
