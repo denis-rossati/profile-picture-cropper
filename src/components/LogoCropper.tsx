@@ -2,10 +2,12 @@ import React, { useState, useCallback} from 'react';
 import Cropper from 'react-easy-crop';
 import makeCroppedImg from '../helper/cropImage';
 
+type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
+
 interface Props {
   logoImg: (string | undefined),
-  setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
-  setComponent: React.Dispatch<React.SetStateAction<string | undefined>>,
+  setLogoImg: SetStateDefaultStringType,
+  setComponent: SetStateDefaultStringType,
 }
 
 export const LogoCropper = ({

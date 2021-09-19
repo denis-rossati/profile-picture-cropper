@@ -1,9 +1,11 @@
 import React from 'react';
 
+type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
+
 interface Props {
   logoImg: (undefined | string),
-  setComponentName: React.Dispatch<React.SetStateAction<string | undefined>>,
-  setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
+  setComponentName: SetStateDefaultStringType,
+  setLogoImg: SetStateDefaultStringType,
 }
 
 export const LogoInput = ({
