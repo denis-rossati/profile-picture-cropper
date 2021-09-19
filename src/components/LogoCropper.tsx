@@ -40,6 +40,21 @@ export const LogoCropper = ({
           } }
         />
       </div>
+      <div>
+        <div>
+          <label>
+            <p>Crop</p>
+            <input
+              type="range"
+              value={zoom}
+              min={1}
+              max={3}
+              step={0.05}
+              onChange={handleSliderChange}
+            />
+          </label>
+        </div>
+      </div>
       
     </section>
   );
