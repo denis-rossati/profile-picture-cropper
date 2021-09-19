@@ -33,8 +33,8 @@ export const LogoCropper = ({
 
   return (
     <section>
-      <div>
-      <Cropper
+      <div className="cropperContainer">
+        <Cropper
           image={logoImg}
           crop={crop}
           zoom={zoom}
@@ -51,7 +51,7 @@ export const LogoCropper = ({
           } }
         />
       </div>
-      <div>
+      <div className="optionsContainer">
         <div>
           <label>
             <p>Crop</p>
@@ -64,7 +64,7 @@ export const LogoCropper = ({
               onChange={handleSliderChange}
             />
           </label>
-          <div>
+          <div id="saveButtonContainer">
             <button
               type="button"
               onClick={completingEdition}
