@@ -1,5 +1,7 @@
 import React from 'react';
 
+import landscapeIcon from '../icons/landscape.png'
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
@@ -48,19 +50,27 @@ export const LogoInput = ({
         onDragLeave={(event) => event.preventDefault()}
         onDrop={handleOnDropUpload}
       >
-        <p>dropa uma imagem em mim</p>
-        <label>
-          Drop the image here or click to browse.
-          <input
-            id="inputFile"
-            type="file"
-            accept="image/"
-            onChange={handleChangeUpload}
-            style={{
-              display: 'none',
-            }}
-          />
-        </label>
+        <div>
+          <p>
+            <span>
+              <img  
+                id="landscapeIcon"
+                src={landscapeIcon}
+                alt="landscape icon"
+              />
+            </span>
+            Organization Logo
+          </p>
+          <label>
+            Drop the image here or click to browse.
+            <input
+              id="inputFile"
+              type="file"
+              accept="image/"
+              onChange={handleChangeUpload}
+            />
+          </label>
+        </div>
       </section>
     </>
   );
