@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+  input[type=file] {
+    display: none;
+  }
+
+  .LogoInput {
+    background-color: #F2F5F8;
+    border: 2px dashed #C7CDD3;
+    display: flex;
+  }
+
+  #styleHelperLogoInput {
+    min-width: 131px;
+  }
+
+  #logoCropped {
+    background-color: transparent;
+    border-radius: 50%;
+    min-height: 114px;
+    min-width: 114px;
+    max-height: 114px;
+    max-width: 114px;
+    overflow: hidden;
+    margin: 31px 50px 31px 31px;
+  }
+
+  .LogoInput section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    min-height: 177px;
+  }
+
+  .LogoInput section div {
+    text-align: center;
+  }
+
+  .LogoInput section div p {
+    color: #495567;
+    font-weight: 400;
+    margin: 5px;
+  }
+
+  .LogoInput section div p span img {
+    border-radius: 1px;
+    margin-right: 12px;
+  }
+
+  .LogoInput section div label {
+    color: #677489;
+    font-weight: 300;
+  }
+
+}

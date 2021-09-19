@@ -3,6 +3,8 @@ import { LogoInput } from '../components/LogoInput';
 import {LogoCropper} from '../components/LogoCropper';
 import { ErrorComponent } from '../components/ErrorComponent';
 
+import './styles/AvatarUpload.css'
+
 const AvatarUploader = (): JSX.Element => {
   const [componentName, setComponentName] = useState<string | undefined>('LogoInput');
   const [logoImg, setLogoImg] = useState<string | undefined>('');
@@ -40,7 +42,7 @@ const AvatarUploader = (): JSX.Element => {
   }
 
   return (
-    <main>
+    <main className={ componentName }>
       { renderComponent() }
     </main>
   );
