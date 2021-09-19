@@ -1,5 +1,7 @@
 import React from 'react';
 
+import atentionIcon from '../icons/atentionIcon.png';
+
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 
 interface Props {
@@ -21,7 +23,7 @@ export const ErrorComponent = ({
     <div>
       <article>
         <div>
-          <img src={}  alt="atention icon" />
+          <img src={atentionIcon}  alt="atention icon" />
         </div>
         <div>
           <p>Sorry, the upload failed.</p>
