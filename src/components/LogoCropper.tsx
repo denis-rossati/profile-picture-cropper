@@ -2,8 +2,8 @@ import React, { useState, useCallback} from 'react';
 import Cropper from 'react-easy-crop';
 
 interface Props {
-  logoImg: string,
-  setLogoImg: React.Dispatch<React.SetStateAction<string | null>>,
+  logoImg: (string | undefined),
+  setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
   setComponent: React.Dispatch<React.SetStateAction<string>>,
 }
 
@@ -18,7 +18,9 @@ export const LogoCropper = ({
 
   const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
     setCroppedAreaPixels(croppedAreaPixels)
-  }, [])
+  }, []);
+
+  const handleSliderChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => setZoom(parseFloat(value));
 
   return (
     <section>
@@ -27,7 +29,7 @@ export const LogoCropper = ({
           image={logoImg}
           crop={crop}
           zoom={zoom}
-          aspect={2/2}
+          aspect={1}
           cropShape="round"
           showGrid={false}
           onCropChange={setCrop}
