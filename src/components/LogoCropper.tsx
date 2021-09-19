@@ -1,5 +1,6 @@
 import React, { useState, useCallback} from 'react';
 import Cropper from 'react-easy-crop';
+import { RestartProcess } from './RestartProcess';
 import makeCroppedImg from '../helper/cropImage';
 
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
@@ -72,6 +73,7 @@ export const LogoCropper = ({
             </button>
           </div>
         </div>
+        <RestartProcess setLogoImg={setLogoImg} setComponent={setComponent} />
       </div>
       
     </section>
