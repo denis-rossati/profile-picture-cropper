@@ -11,7 +11,7 @@ interface Props {
 export const RestartProcess = ({
   setLogoImg,
   setComponent,
-}: Props) => {
+}: Props): JSX.Element => {
   
   const resetProcess = () => {
     setLogoImg('');
