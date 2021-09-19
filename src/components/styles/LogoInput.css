@@ -1,12 +1,16 @@
 @media (max-width: 768px) {
-  .LogoInput{
-    background-color: #7494b4;
-    border: 2px dashed #C7CDDE;
+  input[type=file] {
+    display: none;
+  }
+
+  .LogoInput {
+    background-color: #F2F5F8;
+    border: 2px dashed #C7CDD3;
     display: flex;
   }
 
-  #styleHelperInputReceiving {
-    min-width: 146px;
+  #styleHelperLogoInput {
+    min-width: 131px;
   }
 
   #logoCropped {
@@ -28,23 +32,24 @@
     min-height: 177px;
   }
 
-  .InputReceiving section div {
+  .LogoInput section div {
     text-align: center;
   }
 
-  .InputReceiving section div p {
+  .LogoInput section div p {
     color: #495567;
     font-weight: 400;
     margin: 5px;
   }
 
-  .InputReceiving section div p span img {
+  .LogoInput section div p span img {
     border-radius: 1px;
     margin-right: 12px;
   }
 
-  .InputReceiving section div label {
+  .LogoInput section div label {
     color: #677489;
     font-weight: 300;
   }
+
 }

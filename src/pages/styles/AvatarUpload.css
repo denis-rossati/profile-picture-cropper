@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 @media (max-width: 768px) {
-
   * {
     font-family: 'Inter', sans-serif;
   }
@@ -14,8 +13,8 @@
   main {
     min-height: 177px;
     max-height: 177px;
-    min-width: 553px;
-    max-width: 553px;
+    min-width: 549px;
+    max-width: 549px;
     overflow: hidden;
     border-radius: 8px;
   }
