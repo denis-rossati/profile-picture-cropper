@@ -19,7 +19,7 @@ export const RestartProcess = ({
   }
 
   return(
-    <div>
+    <div id="closeButton">
       <button onClick={resetProcess}>
         <img src={closeIcon} alt="close icon" />
       </button>

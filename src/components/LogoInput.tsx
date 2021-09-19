@@ -38,7 +38,7 @@ export const LogoInput = ({
       } 
     } else {
       setLogoImg('');
-      setComponent('LogoInput');
+      setComponent('ErrorComponent');
     }
   }
 

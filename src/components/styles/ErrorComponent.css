@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  .ErrorComponent article {
+    display: flex;
+  }
+
+  #atentionIcon {
+    min-width: 114px;
+    min-height: 114px;
+    background-color: #C3CBD5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+  }
+
+  #warningMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 334px;
+  }
+
+  #warningMessage button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3D485F;
+    padding: 0;
+    font-size: 16px;
+    color: #3D485F;
+  }
+
+  #warningMessage p {
+    color: #C64D32;
+    margin: 0 0 11px 0;
+  }
+
+  #closeButton {
+    margin: 35px 29px 0 0;
+  }
+
+  #closeButton button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
