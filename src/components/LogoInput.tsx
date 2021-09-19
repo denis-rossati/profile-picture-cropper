@@ -1,6 +1,7 @@
 import React from 'react';
-
 import landscapeIcon from '../icons/landscape.png'
+
+import './styles/LogoInput.css';
 
 type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | undefined>>;
 

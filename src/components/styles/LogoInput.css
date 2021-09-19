@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .LogoInput{
+    background-color: #7494b4;
+    border: 2px dashed #C7CDDE;
+    display: flex;
+  }
+}
