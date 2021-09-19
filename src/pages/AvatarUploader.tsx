@@ -16,7 +16,7 @@ const AvatarUploader = (): JSX.Element => {
         />
       );
       case componentName === 'LogoCropper': return (
-        <LogoCropper />
+        <p>teste</p>
       );
       default: return (
         <LogoInput
