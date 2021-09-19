@@ -44,7 +44,7 @@ export const LogoInput = ({
 
   return (
     <>
-      { logoImg !== '' && <img id="logoCropped" src={logoImg} alt="logo frame" />}
+      { logoImg !== '' ? <div id="styleHelperInputReceiving" /> : <img id="logoCropped" src={logoImg} alt="logo frame" />}
       <section
         onDragOver={(event) => event.preventDefault()}
         onDragEnter={(event) => event.preventDefault()}

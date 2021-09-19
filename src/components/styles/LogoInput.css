@@ -4,4 +4,8 @@
     border: 2px dashed #C7CDDE;
     display: flex;
   }
+
+  #styleHelperInputReceiving {
+    min-width: 146px;
+  }
 }
