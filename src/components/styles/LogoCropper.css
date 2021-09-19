@@ -1,3 +1,16 @@
 @media (max-width: 768px) {
+  .LogoCropper section {
+    display: flex;
+    min-height: 177px;
+    align-content: center;
+  }
 
+  .cropperContainer {
+    position: relative;
+    min-width: 114px;
+    min-height: 114px;
+    max-width: 114px;
+    max-height: 114px;
+    border: none;
+  }
 }
