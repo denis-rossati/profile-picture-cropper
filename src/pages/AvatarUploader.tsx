@@ -1,20 +1,31 @@
 import React, { useState } from 'react';
 import { LogoInput } from '../components/LogoInput';
+import {LogoCropper} from '../components/LogoCropper';
 
 const AvatarUploader = (): JSX.Element => {
   const [componentName, setComponentName] = useState('LogoInput');
   const [logoImg, setLogoImg] = useState<null | string>(null);
 
   const renderComponent = (): JSX.Element => {
-    if (componentName === 'LogoInput') {
-      return(<LogoInput
-        logoImg={logoImg}
-        setLogoImg={setLogoImg}
-        setComponentName={setComponentName}
-      />);
+    switch(true) {
+      case componentName === 'LogoInput': return (
+        <LogoInput
+          logoImg={logoImg}
+          setLogoImg={setLogoImg}
+          setComponentName={setComponentName}
+        />
+      );
+      case componentName === 'LogoCropper': return (
+        <p>teste</p>
+      );
+      default: return (
+        <LogoInput
+          logoImg={logoImg}
+          setLogoImg={setLogoImg}
+          setComponentName={setComponentName}
+        />
+      )
     }
-
-  return(<p>hi</p>);
   }
 
   return (
