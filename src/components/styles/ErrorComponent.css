@@ -21,4 +21,15 @@
     align-items: flex-start;
     min-width: 334px;
   }
+
+  #warningMessage button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3D485F;
+    padding: 0;
+    font-size: 16px;
+    color: #3D485F;
+  }
+  
 }
