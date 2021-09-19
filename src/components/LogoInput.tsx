@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface Props {
-  logoImg: null | string,
+  logoImg: (undefined | string),
   setComponentName: React.Dispatch<React.SetStateAction<string>>,
-  setLogoImg: React.Dispatch<React.SetStateAction<string | null>>,
+  setLogoImg: React.Dispatch<React.SetStateAction<string | undefined>>,
 }
 
 export const LogoInput = ({
@@ -32,14 +32,14 @@ export const LogoInput = ({
         setComponentName('LogoCropper');
       } 
     } else {
-      setLogoImg(null);
+      setLogoImg('');
       setComponentName('InvalidFile');
     }
   }
 
   return (
     <>
-      { logoImg && <img id="logoCropped" src={logoImg} alt="logo frame" />}
+      { logoImg !== '' && <img id="logoCropped" src={logoImg} alt="logo frame" />}
       <section
         onDragOver={(event) => event.preventDefault()}
         onDragEnter={(event) => event.preventDefault()}
