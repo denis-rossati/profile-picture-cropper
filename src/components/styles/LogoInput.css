@@ -19,4 +19,32 @@
     overflow: hidden;
     margin: 31px 50px 31px 31px;
   }
+
+  .LogoInput section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    min-height: 177px;
+  }
+
+  .InputReceiving section div {
+    text-align: center;
+  }
+
+  .InputReceiving section div p {
+    color: #495567;
+    font-weight: 400;
+    margin: 5px;
+  }
+
+  .InputReceiving section div p span img {
+    border-radius: 1px;
+    margin-right: 12px;
+  }
+
+  .InputReceiving section div label {
+    color: #677489;
+    font-weight: 300;
+  }
 }
