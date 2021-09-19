@@ -53,8 +53,8 @@ export const LogoCropper = ({
           } }
         />
       </div>
-      <div className="optionsContainer">
-        <div>
+      <div id="optionsContainer">
+        <div id="innerOptions">
           <label>
             <p>Crop</p>
             <input
