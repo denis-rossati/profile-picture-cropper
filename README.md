@@ -6,8 +6,9 @@ This is an app where the user can insert a picture and crop as he please. After 
 
 ## Using the app
 
-<details>
-  <Summary>App display</Summary>
+<img src="./app-display.gif" alt="gif with the app being used" >
+
+---
 
 ## Target
 
