@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const AvatarUploader = (): JSX.Element => {
+  const [componentName, setComponentName] = useState('LogoInput');
   const renderComponent = (): JSX.Element => {
-    return(<p>oi</p>);
+    if (componentName === 'LogoInput') {
+      return(<p>hello</p>);
+    }
+    
+  return(<p>hi</p>);
   }
 
   return (
