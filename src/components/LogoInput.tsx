@@ -4,13 +4,13 @@ type SetStateDefaultStringType = React.Dispatch<React.SetStateAction<string | un
 
 interface Props {
   logoImg: (undefined | string),
-  setComponentName: SetStateDefaultStringType,
+  setComponent: SetStateDefaultStringType,
   setLogoImg: SetStateDefaultStringType,
 }
 
 export const LogoInput = ({
   logoImg,
-  setComponentName,
+  setComponent,
   setLogoImg,
 }: Props): JSX.Element => {
 
@@ -31,11 +31,11 @@ export const LogoInput = ({
       await reader.readAsDataURL(file);
       reader.onloadend = () => {
         setLogoImg(reader.result as string);
-        setComponentName('LogoCropper');
+        setComponent('LogoCropper');
       } 
     } else {
       setLogoImg('');
-      setComponentName('LogoInput');
+      setComponent('LogoInput');
     }
   }
 

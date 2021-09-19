@@ -13,7 +13,7 @@ const AvatarUploader = (): JSX.Element => {
         <LogoInput
           logoImg={logoImg}
           setLogoImg={setLogoImg}
-          setComponentName={setComponentName}
+          setComponent={setComponentName}
         />
       );
       case componentName === 'LogoCropper': return (
@@ -33,7 +33,7 @@ const AvatarUploader = (): JSX.Element => {
         <LogoInput
           logoImg={logoImg}
           setLogoImg={setLogoImg}
-          setComponentName={setComponentName}
+          setComponent={setComponentName}
         />
       )
     }
