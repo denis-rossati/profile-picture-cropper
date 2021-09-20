@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
+#boringMessage {
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
+  #boringMessage {
+    display: none;
+  }
+
   * {
     font-family: 'Inter', sans-serif;
   }

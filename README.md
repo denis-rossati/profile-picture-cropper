@@ -8,6 +8,8 @@ This is an app where the user can insert a picture and crop as he please. After 
 
 <img src="./app-display.gif" alt="gif with the app being used" >
 
+I did the mobile first approach, but i did just this approach. So, to be able to see de CSS work, please, use the responsive tool of your choice.
+
 ---
 
 ## Target
