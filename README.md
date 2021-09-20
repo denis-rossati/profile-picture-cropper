@@ -6,9 +6,9 @@ This is an app where the user can insert a picture and crop as he please. After 
 
 ## Using the app
 
-<img src="./app-display.gif" alt="gif with the app being used" >
+<img src="https://github.com/denis-rossati/profile-picture-cropper/blob/master/app-display.gif?raw=true" alt="gif with the app being used" >
 
-I did the mobile first approach, but i did just this approach. So, to be able to see de CSS work, please, use the responsive tool of your choice.
+I did the mobile first approach, but i did just this approach. So, to be able to see the CSS work, please, use the responsive tool of your choice.
 
 ---
 
@@ -34,4 +34,4 @@ As I discussed with Juliana, from the croct team, for the sake of not taking 1 w
 
 This aplication does not have a back end, but if it had, I probably would use multer and express to store the cropped image.
 
-One of the requirements was "Clicking on save, the component should display the cropped logo and a button to restart the process. It must also provide some way for parent components to access the resulting image's raw data.". This put me in a doubt, for one second, I thought that I was required to use a tool to make the URL avaliable to the whole aplication. In other words, a global state. I did not implement this because I don't think that this was the purpose of the requirement. But due to the size of the application. I would choose context API instead of redux because it's more simple.
+One of the requirements was "Clicking on save, the component should display the cropped logo and a button to restart the process. It must also provide some way for parent components to access the resulting image's raw data.". This put me in a doubt because for one second I thought that I was required to use a tool to make the URL avaliable to the whole aplication. In other words, a global state. I did not implement this because I don't think that this was the purpose of the requirement. But due to the size of the application. I would choose context API instead of redux because it's a simple application and it's not scalable, so context API should be enough for the purpose of the app.
