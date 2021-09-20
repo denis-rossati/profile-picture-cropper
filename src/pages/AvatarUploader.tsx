@@ -43,7 +43,7 @@ const AvatarUploader = (): JSX.Element => {
 
   return (
     <main className={ componentName }>
-      <p id="boringMessage">Please, don&apos;t forget to use the chrome responsive tool!</p>
+      <p id="boringMessage">Please, don&apos;t forget to use the responsive tool of your choice!</p>
       { renderComponent() }
     </main>
   );
